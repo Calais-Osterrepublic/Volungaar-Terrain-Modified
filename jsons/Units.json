@@ -1,13 +1,21 @@
 [
-
-	// Info according to Civilization Wiki and https://www.civfanatics.com/civ5/info/units/gods-and-kings/
-
-	/* Ancient Era */
 	{
 		"name": "Worker",
 		"unitType": "Civilian",
+		"cost": 70,
 		"movement": 2,
-		"uniques": ["Can build [Land] improvements on tiles","All tiles cost 1 movement <starting from the [Renaissance era]>", "Ignores Zone of Control <starting from the [Renaissance era]>", "Can pass through impassable tiles <starting from the [Renaissance era]>"],
+		"uniques": ["Can build [Land] improvements on tiles"],
+	},
+	{
+		"name": "Chasm Worker",
+		"unitType": "Civilian",
+		"cost": 300,
+		"movement": 2,
+		"requiredTech": "Flight",
+		"uniques": [
+			"Can build [Land] improvements on tiles <in [Chasm] tiles>",
+			"Can pass through impassable tiles"	
+		],	
 	},
 	{
 		"name": "Work Boats",
@@ -15,6 +23,12 @@
 		"movement": 4,
 		"cost": 30,
 		"requiredTech": "Sailing",
-		"uniques": ["Cannot enter ocean tiles <before discovering [Astronomy]>", "May create improvements on water resources", "Uncapturable","Can enter ice tiles <during a Golden Age>", "Invisible to non-adjacent units <during a Golden Age>"]
+		"uniques": [
+			"Cannot enter ocean tiles <before discovering [Astronomy]>", 
+			"May create improvements on water resources", 
+			"Uncapturable",
+			"Can enter ice tiles <during a Golden Age>", 
+			"Invisible to non-adjacent units <during a Golden Age>"
+		]
 	},
 ]
